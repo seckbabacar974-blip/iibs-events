@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IIBS Events — Atelier Cybersécurité</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Configuration Tailwind pour le mode sombre
+      tailwind.config = { darkMode: "class" };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+<main class="flex-1 py-10">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Bouton retour -->
+    <a href="../agenda.html"
+      class="inline-flex items-center gap-2 bg-[#0A2540] dark:bg-white text-white dark:text-[#0A2540] text-xs font-semibold px-4 py-2 rounded-lg mb-6 hover:opacity-90 transition duration-300">
+      <i class="fa-solid fa-arrow-left text-xs"></i> Retour
+    </a>
+
+    <!-- Titre -->
+    <h1 class="text-4xl sm:text-5xl font-black text-[#E11D48] uppercase mb-8">
+      Journée Portes Ouvertes
+    </h1>
+
+    <!-- Grille image + coordonnées -->
+    <div class="grid lg:grid-cols-3 gap-8 mb-10">
+
+      <!-- Image -->
+      <div class="lg:col-span-2">
+        <div class="rounded-2xl overflow-hidden">
+          <img src="../../assets/images/jpo.jpg" alt="Journée Portes Ouvertes IIBS"
+            class="w-full h-[500px] object-cover" />
+        </div>
+      </div>
+
+      <!-- Coordonnées -->
+      <div class="flex flex-col justify-center gap-4">
+        <h3 class="text-[#E11D48] font-bold text-lg">Coordonnées</h3>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3 text-[#0A2540] dark:text-white text-sm">
+            <i class="fa-solid fa-location-dot mt-0.5 text-[#E11D48] shrink-0"></i>
+            Sacré Cœur 3, Pyrotechnique, Dakar
+          </li>
+          <li class="flex items-start gap-3 text-[#0A2540] dark:text-white text-sm">
+            <i class="fa-solid fa-phone mt-0.5 text-[#E11D48] shrink-0"></i>
+            +221 77 446 03 03
+          </li>
+          <li class="flex items-start gap-3 text-[#0A2540] dark:text-white text-sm">
+            <i class="fa-solid fa-envelope mt-0.5 text-[#E11D48] shrink-0"></i>
+            contact@iibs-sn.com
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Description -->
+    <p class="text-[#64748B] dark:text-[#94A3B8] text-sm leading-relaxed mb-2 italic">
+      description
+    </p>
+    <p class="text-[#0A2540] dark:text-white text-sm leading-relaxed mb-10">
+      La Journée Portes Ouvertes de l'IIBS est l'occasion idéale pour les futurs étudiants et leurs parents de découvrir l'école, ses filières, ses infrastructures et son ambiance. Rencontrez les enseignants, les étudiants actuels et la direction. Visitez les laboratoires informatiques, assistez à des mini-ateliers et obtenez toutes les informations sur les admissions et les bourses disponibles.
+    </p>
+
+    <!-- Planning -->
+    <div class="bg-white dark:bg-[#112240] rounded-2xl p-6 border border-gray-100 dark:border-[#1E3A5F]">
+      <h2 class="text-[#E11D48] font-bold text-xl mb-6">Planning</h2>
+      <div class="flex flex-col gap-4">
+
+        <div class="grid grid-cols-3 gap-4 items-start border-b border-gray-100 dark:border-[#1E3A5F] pb-4">
+          <span class="text-[#0A2540] dark:text-white font-bold text-sm">08:00</span>
+          <span class="text-[#0A2540] dark:text-white font-semibold text-sm">Accueil des visiteurs</span>
+          <span class="text-[#64748B] dark:text-[#94A3B8] text-xs leading-relaxed">Enregistrement et remise des programmes de la journée.</span>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 items-start border-b border-gray-100 dark:border-[#1E3A5F] pb-4">
+          <span class="text-[#0A2540] dark:text-white font-bold text-sm">09:00</span>
+          <span class="text-[#0A2540] dark:text-white font-semibold text-sm">Présentation de l'IIBS</span>
+          <span class="text-[#64748B] dark:text-[#94A3B8] text-xs leading-relaxed">Mot de la direction, présentation des filières, des débouchés et du mode d'admission.</span>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 items-start border-b border-gray-100 dark:border-[#1E3A5F] pb-4">
+          <span class="text-[#0A2540] dark:text-white font-bold text-sm">10:30</span>
+          <span class="text-[#0A2540] dark:text-white font-semibold text-sm">Visite des locaux</span>
+          <span class="text-[#64748B] dark:text-[#94A3B8] text-xs leading-relaxed">Tour guidé des laboratoires informatiques, salles de cours et espaces étudiants.</span>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 items-start border-b border-gray-100 dark:border-[#1E3A5F] pb-4">
+          <span class="text-[#0A2540] dark:text-white font-bold text-sm">12:00</span>
+          <span class="text-[#0A2540] dark:text-white font-semibold text-sm">Mini-ateliers</span>
+          <span class="text-[#64748B] dark:text-[#94A3B8] text-xs leading-relaxed">Démonstrations pratiques animées par les étudiants actuels de l'IIBS.</span>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 items-start">
+          <span class="text-[#0A2540] dark:text-white font-bold text-sm">14:00</span>
+          <span class="text-[#0A2540] dark:text-white font-semibold text-sm">Questions & admissions</span>
+          <span class="text-[#64748B] dark:text-[#94A3B8] text-xs leading-relaxed">Séance de questions-réponses avec le service des admissions et remise des dossiers d'inscription.</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-10 flex justify-center">
+      <a href="../inscription.html"
+        class="bg-[#E11D48] hover:bg-[#BE123C] text-white font-semibold px-10 py-3 rounded-lg transition duration-300 flex items-center gap-2">
+        S'inscrire à cet événement
+        <i class="fa-solid fa-arrow-right text-xs"></i>
+      </a>
+    </div>
+
+  </div>
+</main>
+  </body>
+</html>

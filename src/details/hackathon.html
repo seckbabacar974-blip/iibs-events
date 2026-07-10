@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIBS Events — Détail événement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Configuration Tailwind pour le mode sombre
+      tailwind.config = { darkMode: "class" };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <main class="flex-1 py-10">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Bouton retour -->
+        <a href="../agenda.html"
+          class="inline-flex items-center gap-2 bg-[#0A2540] dark:bg-white text-white dark:text-[#0A2540] text-xs font-semibold px-4 py-2 rounded-lg mb-6 hover:opacity-90 transition duration-300">
+          <i class="fa-solid fa-arrow-left text-xs"></i> Retour
+        </a>
+
+        <!-- Titre événement -->
+        <h1 class="text-4xl sm:text-5xl font-black text-[#E11D48] uppercase mb-8">
+          Hackathon
+        </h1>
+
+        <!-- Grille image + coordonnées -->
+        <div class="grid lg:grid-cols-3 gap-8 mb-10">
+
+          <!-- Image -->
+          <div class="lg:col-span-2">
+            <div class="rounded-2xl overflow-hidden">
+              <img src="../../assets/images/hackathon1.jpg" alt="Hackathon IIBS 2026"
+                class="w-full h-full object-cover" />
+            </div>
+          </div>
+
+          <!-- Coordonnées -->
+          <div class="flex flex-col justify-center gap-4">
+            <h3 class="text-[#E11D48] font-bold text-lg">Coordonnées</h3>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3 text-[#0A2540] dark:text-white text-sm">
+                <i class="fa-solid fa-location-dot mt-0.5 text-[#E11D48] shrink-0"></i>
+                Sacré Cœur 3, Pyrotechnique, Dakar
+              </li>
+              <li class="flex items-start gap-3 text-[#0A2540] dark:text-white text-sm">
+                <i class="fa-solid fa-phone mt-0.5 text-[#E11D48] shrink-0"></i>
+                +221 77 446 03 03
+              </li>
+              <li class="flex items-start gap-3 text-[#0A2540] dark:text-white text-sm">
+                <i class="fa-solid fa-envelope mt-0.5 text-[#E11D48] shrink-0"></i>
+                contact@iibs-sn.com
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Description -->
+        <p class="text-[#64748B] dark:text-[#94A3B8] text-sm leading-relaxed mb-2 italic">
+          Description
+        </p>
+        <p class="text-[#0A2540] dark:text-white text-sm leading-relaxed mb-10">
+          Le Hackathon IIBS 2026 réunit les étudiants en Génie Logiciel, Cybersécurité et Data Science autour d'un défi commun : imaginer et prototyper en 48h des solutions technologiques innovantes aux problématiques africaines. Les équipes seront encadrées par des mentors issus des plus grandes entreprises tech de Dakar. Le projet le plus convaincant remportera une bourse de développement et un accompagnement professionnel.
+        </p>
+
+        <!-- Planning -->
+        <div class="bg-white dark:bg-[#112240] rounded-2xl p-6 border border-gray-100 dark:border-[#1E3A5F]">
+          <h2 class="text-[#E11D48] font-bold text-xl mb-6">Planning</h2>
+          <div class="flex flex-col gap-4">
+
+            <!-- Ligne planning -->
+            <div class="grid grid-cols-3 gap-4 items-start border-b border-gray-100 dark:border-[#1E3A5F] pb-4">
+              <span class="text-[#0A2540] dark:text-white font-bold text-sm">08:00</span>
+              <span class="text-[#0A2540] dark:text-white font-semibold text-sm">Accueil & Café</span>
+              <span class="text-[#64748B] dark:text-[#94A3B8] text-xs leading-relaxed">Enregistrement des participants et présentation du programme de la journée.</span>
+            </div>
+
+            <div class="grid grid-cols-3 gap-4 items-start border-b border-gray-100 dark:border-[#1E3A5F] pb-4">
+              <span class="text-[#0A2540] dark:text-white font-bold text-sm">09:00</span>
+              <span class="text-[#0A2540] dark:text-white font-semibold text-sm">Keynote d'ouverture</span>
+              <span class="text-[#64748B] dark:text-[#94A3B8] text-xs leading-relaxed">Présentation des mentors, des sponsors et des thématiques du hackathon.</span>
+            </div>
+
+            <div class="grid grid-cols-3 gap-4 items-start border-b border-gray-100 dark:border-[#1E3A5F] pb-4">
+              <span class="text-[#0A2540] dark:text-white font-bold text-sm">10:00</span>
+              <span class="text-[#0A2540] dark:text-white font-semibold text-sm">Formation des équipes</span>
+              <span class="text-[#64748B] dark:text-[#94A3B8] text-xs leading-relaxed">Constitution des groupes de travail et briefing sur les règles du concours.</span>
+            </div>
+
+            <div class="grid grid-cols-3 gap-4 items-start border-b border-gray-100 dark:border-[#1E3A5F] pb-4">
+              <span class="text-[#0A2540] dark:text-white font-bold text-sm">13:00</span>
+              <span class="text-[#0A2540] dark:text-white font-semibold text-sm">Pause déjeuner</span>
+              <span class="text-[#64748B] dark:text-[#94A3B8] text-xs leading-relaxed">Déjeuner offert par l'IIBS et networking entre participants.</span>
+            </div>
+
+            <div class="grid grid-cols-3 gap-4 items-start">
+              <span class="text-[#0A2540] dark:text-white font-bold text-sm">19:00</span>
+              <span class="text-[#0A2540] dark:text-white font-semibold text-sm">Checkpoint technique</span>
+              <span class="text-[#64748B] dark:text-[#94A3B8] text-xs leading-relaxed">Premier point d'avancement avec les mentors et ajustement des projets.</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CTA inscription -->
+        <div class="mt-10 flex justify-center">
+          <a href="../inscription.html"
+            class="bg-[#E11D48] hover:bg-[#BE123C] text-white font-semibold px-10 py-3 rounded-lg transition duration-300 flex items-center gap-2">
+            S'inscrire à cet événement
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+      </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth box-border m-0 p-0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Configuration Tailwind pour le mode sombre
+      tailwind.config = { darkMode: "class" };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>IIBS Events — Filières</title>
+  </head>
+
+  <body
+    class="bg-[#D7DBDF] transition-colors duration-300 dark:bg-[#0A142F] text-slate-900 dark:text-white"
+  >
+    <!-- HEADER -->
+    <header class="bg-white/15 shadow-md sticky top-0 z-50 backdrop-blur">
+      <!-- <input type="checkbox" id="dark-toggle" class="hidden" /> -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <a href="../../index.html" class="flex items-center gap-2">
+            <div
+              class="w-8 h-8 bg-[#112240] p-5 rounded-md flex items-center justify-center"
+            >
+              <span class="text-white font-bold text-sm">IIBS</span>
+            </div>
+            <span class="text-[#112240] font-bold text-lg dark:text-white"
+              >IIBS Events</span
+            >
+          </a>
+
+          <!-- Nav Desktop -->
+          <nav class="hidden md:flex items-center gap-6">
+            <a
+              href="../../index.html"
+              class="text-[#112240] dark:text-white dark:hover:text-[#112240] font-semibold duration-300 hover:text-gray-700 text-sm transition"
+              >Accueil</a
+            >
+            <a
+              href="agenda.html"
+              class="text-[#112240] dark:text-white dark:hover:text-[#112240] font-semibold duration-300 hover:text-gray-700 text-sm transition"
+              >Agenda</a
+            >
+            <a
+              href="actus_galeries.html"
+              class="text-[#112240] dark:text-white dark:hover:text-[#112240] font-semibold duration-300 hover:text-gray-700 text-sm transition"
+              >Actualités</a
+            >
+            <a
+              href="filieres.html"
+              class="text-[#112240] dark:text-white dark:hover:text-[#112240] font-semibold duration-300 hover:text-gray-700 text-sm transition"
+              >Filières</a
+            >
+            <a
+              href="contact.html"
+              class="text-[#112240] dark:text-white dark:hover:text-[#112240] font-semibold duration-300 hover:text-gray-700 text-sm transition"
+              >Contact</a
+            >
+          </nav>
+
+          <!-- Actions -->
+          <div class="flex items-center gap-3">
+            <!-- Toggle dark/light -->
+            <label
+              for="dark-toggle"
+              class="cursor-pointer w-9 h-9 rounded-full flex items-center dark:text-white justify-center text-[#112240] font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 hover:bg-white/10 transition"
+            >
+              <i class="fa-solid fa-moon"></i>
+            </label>
+
+            <!-- CTA -->
+            <a
+              href="inscription.html"
+              class="duration-300 ease-linear bg-[#E11D48] hover:bg-[#BE123C] text-white text-sm font-semibold px-4 py-2 rounded-lg transition hidden md:block"
+            >
+              M'inscrire &rightarrow;
+            </a>
+
+            <!-- Burger mobile -->
+            <label
+              for="menu-toggle"
+              class="md:hidden cursor-pointer w-9 h-9 flex items-center justify-center dark:text-white text-[#112240] hover:bg-white/10 rounded-lg transition"
+            >
+              ☰
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu mobile -->
+      <input type="checkbox" id="menu-toggle" class="hidden peer/menu" />
+      <div
+        class="hidden peer-checked/menu:flex flex-col justify-center items-center bg-[#0A2540] border-t border-white/10 px-4 py-4 gap-4 md:hidden"
+      >
+        <a
+          href="../../index.html"
+          class="text-white font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 text-sm"
+          >Accueil</a
+        >
+        <a
+          href="agenda.html"
+          class="text-white font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 text-sm"
+          >Agenda</a
+        >
+        <a
+          href="actus_galeries.html"
+          class="text-white font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 text-sm"
+          >Actualités</a
+        >
+        <a
+          href="filieres.html"
+          class="text-white font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 text-sm"
+          >Filières</a
+        >
+        <a
+          href="contact.html"
+          class="text-white font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 text-sm"
+          >Contact</a
+        >
+        <a
+          href="inscription.html"
+          class="text-[#112240] bg-white text-sm font-semibold px-4 py-2 rounded-lg text-center w-full"
+          >M'inscrire &rightarrow;</a
+        >
+      </div>
+      <input type="checkbox" id="dark-toggle" class="hidden" />
+    </header>
+
+    <!-- FILIÈRES -->
+    <main class="py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Titre -->
+        <div class="mb-12">
+          <h1
+            class="text-3xl sm:text-4xl font-bold text-[#0A2540] dark:text-white"
+          >
+            Nos Filières d'Excellence
+          </h1>
+          <p
+            class="text-[#64748B] dark:text-[#94A3B8] mt-3 max-w-2xl text-sm lg:text-base"
+          >
+            Choisissez la formation qui correspond à vos ambitions et
+            construisez votre avenir dans le numérique.
+          </p>
+        </div>
+
+        <!-- Grille 4x2 -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card 1 — Génie Logiciel -->
+          <div
+            class="bg-white dark:bg-[#112240] rounded-xl p-6 border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col"
+          >
+            <div
+              class="w-12 h-12 bg-[#0A2540]/10 dark:bg-white/10 rounded-xl flex items-center justify-center mb-4"
+            >
+              <i
+                class="fa-solid fa-code text-[#0A2540] dark:text-white text-xl"
+              ></i>
+            </div>
+            <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">
+              Génie Logiciel
+            </h3>
+            <p
+              class="text-[#64748B] dark:text-[#94A3B8] text-sm mb-4 leading-relaxed"
+            >
+              Concevez et développez des logiciels robustes en maîtrisant les
+              cycles de développement et les architectures modernes.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-[#E11D48]/10 text-[#E11D48] text-xs px-2 py-1 rounded-full font-medium"
+                >Licence</span
+              >
+              <span
+                class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs px-2 py-1 rounded-full"
+                >3 ans</span
+              >
+            </div>
+            <a
+              href="filieres/gl.html"
+              class="text-[#112240] border-2 border-[#112240] rounded-lg w-fit px-4 py-1 dark:bg-white dark:text-[#112240] dark:hover:bg-transparent dark:hover:border dark:hover:border-white dark:hover:text-white text-sm font-semibold hover:bg-[#112240] hover:text-white ease-linear duration-300 mt-auto"
+            >
+              Découvrir plus →
+            </a>
+          </div>
+
+          <!-- Card 2 — MCD -->
+          <div
+            class="bg-white dark:bg-[#112240] rounded-xl p-6 border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col"
+          >
+            <div
+              class="w-12 h-12 bg-[#0A2540]/10 dark:bg-white/10 rounded-xl flex items-center justify-center mb-4"
+            >
+              <i
+                class="fa-solid fa-bullhorn text-[#0A2540] dark:text-white text-xl"
+              ></i>
+            </div>
+            <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">
+              MCD
+            </h3>
+            <p
+              class="text-[#64748B] dark:text-[#94A3B8] text-sm mb-4 leading-relaxed"
+            >
+              Maîtrisez les stratégies de marketing digital, la communication en
+              ligne et la gestion des réseaux sociaux.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-[#E11D48]/10 text-[#E11D48] text-xs px-2 py-1 rounded-full font-medium"
+                >Licence</span
+              >
+              <span
+                class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs px-2 py-1 rounded-full"
+                >3 ans</span
+              >
+            </div>
+            <a
+              href="filieres/mcd.html"
+              class="text-[#112240] border-2 border-[#112240] rounded-lg w-fit px-4 py-1 dark:bg-white dark:text-[#112240] dark:hover:bg-transparent dark:hover:border dark:hover:border-white dark:hover:text-white text-sm font-semibold hover:bg-[#112240] hover:text-white ease-linear duration-300 mt-auto"
+            >
+              Découvrir plus →
+            </a>
+          </div>
+
+          <!-- Card 3 — MPG -->
+          <div
+            class="bg-white dark:bg-[#112240] rounded-xl p-6 border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col"
+          >
+            <div
+              class="w-12 h-12 bg-[#0A2540]/10 dark:bg-white/10 rounded-xl flex items-center justify-center mb-4"
+            >
+              <i
+                class="fa-solid fa-chart-line text-[#0A2540] dark:text-white text-xl"
+              ></i>
+            </div>
+            <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">
+              MPG
+            </h3>
+            <p
+              class="text-[#64748B] dark:text-[#94A3B8] text-sm mb-4 leading-relaxed"
+            >
+              Pilotez les projets IT et gouvernez les systèmes d'information
+              pour accompagner la transformation numérique.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-[#E11D48]/10 text-[#E11D48] text-xs px-2 py-1 rounded-full font-medium"
+                >Licence</span
+              >
+              <span
+                class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs px-2 py-1 rounded-full"
+                >3 ans</span
+              >
+            </div>
+            <a
+              href="filieres/mpg.html"
+              class="text-[#112240] border-2 border-[#112240] rounded-lg w-fit px-4 py-1 dark:bg-white dark:text-[#112240] dark:hover:bg-transparent dark:hover:border dark:hover:border-white dark:hover:text-white text-sm font-semibold hover:bg-[#112240] hover:text-white ease-linear duration-300 mt-auto"
+            >
+              Découvrir plus →
+            </a>
+          </div>
+
+          <!-- Card 4 — Cybersécurité -->
+          <div
+            class="bg-white dark:bg-[#112240] rounded-xl p-6 border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col"
+          >
+            <div
+              class="w-12 h-12 bg-[#0A2540]/10 dark:bg-white/10 rounded-xl flex items-center justify-center mb-4"
+            >
+              <i
+                class="fa-solid fa-lock text-[#0A2540] dark:text-white text-xl"
+              ></i>
+            </div>
+            <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">
+              Cybersécurité
+            </h3>
+            <p
+              class="text-[#64748B] dark:text-[#94A3B8] text-sm mb-4 leading-relaxed"
+            >
+              Devenez expert en protection des systèmes, détection des menaces
+              et réponse aux incidents de sécurité.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-[#E11D48]/10 text-[#E11D48] text-xs px-2 py-1 rounded-full font-medium"
+                >Licence</span
+              >
+              <span
+                class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs px-2 py-1 rounded-full"
+                >3 ans</span
+              >
+            </div>
+            <a
+              href="filieres/cs.html"
+              class="text-[#112240] border-2 border-[#112240] rounded-lg w-fit px-4 py-1 dark:bg-white dark:text-[#112240] dark:hover:bg-transparent dark:hover:border dark:hover:border-white dark:hover:text-white text-sm font-semibold hover:bg-[#112240] hover:text-white ease-linear duration-300 mt-auto"
+            >
+              Découvrir plus →
+            </a>
+          </div>
+
+          <!-- Card 5 — Data Science -->
+          <div
+            class="bg-white dark:bg-[#112240] rounded-xl p-6 border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col"
+          >
+            <div
+              class="w-12 h-12 bg-[#0A2540]/10 dark:bg-white/10 rounded-xl flex items-center justify-center mb-4"
+            >
+              <i
+                class="fa-solid fa-brain text-[#0A2540] dark:text-white text-xl"
+              ></i>
+            </div>
+            <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">
+              Data Science
+            </h3>
+            <p
+              class="text-[#64748B] dark:text-[#94A3B8] text-sm mb-4 leading-relaxed"
+            >
+              Analysez et exploitez les données massives pour produire des
+              insights stratégiques grâce au machine learning.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-[#E11D48]/10 text-[#E11D48] text-xs px-2 py-1 rounded-full font-medium"
+                >Licence</span
+              >
+              <span
+                class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs px-2 py-1 rounded-full"
+                >3 ans</span
+              >
+            </div>
+            <a
+              href="filieres/ia.html"
+              class="text-[#112240] border-2 border-[#112240] rounded-lg w-fit px-4 py-1 dark:bg-white dark:text-[#112240] dark:hover:bg-transparent dark:hover:border dark:hover:border-white dark:hover:text-white text-sm font-semibold hover:bg-[#112240] hover:text-white ease-linear duration-300 mt-auto"
+            >
+              Découvrir plus →
+            </a>
+          </div>
+
+          <!-- Card 6 — Menagement des entreprises -->
+          <div
+            class="bg-white dark:bg-[#112240] rounded-xl p-6 border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col"
+          >
+            <div
+              class="w-12 h-12 bg-[#0A2540]/10 dark:bg-white/10 rounded-xl flex items-center justify-center mb-4"
+            >
+              <i
+                class="fa-solid fa-briefcase text-[#0A2540] dark:text-white text-xl"
+              ></i>
+            </div>
+            <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">
+              Management des Entreprises
+            </h3>
+            <p
+              class="text-[#64748B] dark:text-[#94A3B8] text-sm mb-4 leading-relaxed"
+            >
+              Développez vos compétences en gestion d'entreprise, leadership et
+              stratégie pour piloter les organisations numériques.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-[#E11D48]/10 text-[#E11D48] text-xs px-2 py-1 rounded-full font-medium"
+                >Licence</span
+              >
+              <span
+                class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs px-2 py-1 rounded-full"
+                >3 ans</span
+              >
+            </div>
+            <a
+              href="filieres/me.html"
+              class="text-[#112240] border-2 border-[#112240] rounded-lg w-fit px-4 py-1 dark:bg-white dark:text-[#112240] dark:hover:bg-transparent dark:hover:border dark:hover:border-white dark:hover:text-white text-sm font-semibold hover:bg-[#112240] hover:text-white ease-linear duration-300 mt-auto"
+            >
+              Découvrir plus →
+            </a>
+          </div>
+
+          <!-- Card 7 — Assistanat Digital -->
+          <div
+            class="bg-white dark:bg-[#112240] rounded-xl p-6 border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col"
+          >
+            <div
+              class="w-12 h-12 bg-[#0A2540]/10 dark:bg-white/10 rounded-xl flex items-center justify-center mb-4"
+            >
+              <i
+                class="fa-solid fa-headset text-[#0A2540] dark:text-white text-xl"
+              ></i>
+            </div>
+            <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">
+              Assistanat Digital
+            </h3>
+            <p
+              class="text-[#64748B] dark:text-[#94A3B8] text-sm mb-4 leading-relaxed"
+            >
+              Maîtrisez les outils bureautiques et digitaux pour assister
+              efficacement les équipes et les dirigeants d'entreprise.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-[#E11D48]/10 text-[#E11D48] text-xs px-2 py-1 rounded-full font-medium"
+                >Licence</span
+              >
+              <span
+                class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs px-2 py-1 rounded-full"
+                >3 ans</span
+              >
+            </div>
+            <a
+              href="filieres/ad.html"
+              class="text-[#112240] border-2 border-[#112240] rounded-lg w-fit px-4 py-1 dark:bg-white dark:text-[#112240] dark:hover:bg-transparent dark:hover:border dark:hover:border-white dark:hover:text-white text-sm font-semibold hover:bg-[#112240] hover:text-white ease-linear duration-300 mt-auto"
+            >
+              Découvrir plus →
+            </a>
+          </div>
+
+          <!-- Card 8 — DWM -->
+          <div
+            class="bg-white dark:bg-[#112240] rounded-xl p-6 border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col"
+          >
+            <div
+              class="w-12 h-12 bg-[#0A2540]/10 dark:bg-white/10 rounded-xl flex items-center justify-center mb-4"
+            >
+              <i
+                class="fa-solid fa-mobile-screen text-[#0A2540] dark:text-white text-xl"
+              ></i>
+            </div>
+            <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">
+              Développement Web Mobile
+            </h3>
+            <p
+              class="text-[#64748B] dark:text-[#94A3B8] text-sm mb-4 leading-relaxed"
+            >
+              Créez des applications web et mobiles modernes, performantes et
+              responsives avec les frameworks actuels.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-[#E11D48]/10 text-[#E11D48] text-xs px-2 py-1 rounded-full font-medium"
+                >Licence</span
+              >
+              <span
+                class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs px-2 py-1 rounded-full"
+                >3 ans</span
+              >
+            </div>
+            <a
+              href="filieres/dwm.html"
+              class="text-[#112240] border-2 border-[#112240] rounded-lg w-fit px-4 py-1 dark:bg-white dark:text-[#112240] dark:hover:bg-transparent dark:hover:border dark:hover:border-white dark:hover:text-white text-sm font-semibold hover:bg-[#112240] hover:text-white ease-linear duration-300 mt-auto"
+            >
+              Découvrir plus →
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-[#0A2540] dark:bg-[#0A142F] pt-12 pb-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+          <!-- Logo + description + réseaux -->
+          <div class="lg:col-span-2">
+            <a href="../../index.html" class="flex items-center gap-2 mb-4">
+              <div
+                class="w-8 h-8 bg-white rounded-md flex items-center justify-center"
+              >
+                <span class="text-[#112240] font-bold text-sm">IIBS</span>
+              </div>
+              <span class="text-white font-bold text-lg">IIBS Events</span>
+            </a>
+            <p class="text-white/60 text-sm leading-relaxed max-w-xs mb-6">
+              La plateforme officielle des événements de l'Institut Informatique
+              Business School de Dakar.
+            </p>
+            <!-- Réseaux sociaux -->
+            <div class="flex items-center gap-4">
+              <a
+                href="#"
+                class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#E11D48] flex items-center justify-center text-white transition duration-300"
+              >
+                <i class="fa-brands fa-instagram text-sm"></i>
+              </a>
+              <a
+                href="#"
+                class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#E11D48] flex items-center justify-center text-white transition duration-300"
+              >
+                <i class="fa-brands fa-github text-sm"></i>
+              </a>
+              <a
+                href="#"
+                class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#E11D48] flex items-center justify-center text-white transition duration-300"
+              >
+                <i class="fa-brands fa-facebook text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Liens utiles -->
+          <div>
+            <h4 class="text-white font-semibold mb-4">Liens utiles</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="../index.html"
+                  class="text-white/60 hover:text-white text-sm transition duration-300"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="agenda.html"
+                  class="text-white/60 hover:text-white text-sm transition duration-300"
+                  >Agenda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="actus_galeries.html"
+                  class="text-white/60 hover:text-white text-sm transition duration-300"
+                  >Actualités</a
+                >
+              </li>
+              <li>
+                <a
+                  href="filieres.html"
+                  class="text-white/60 hover:text-white text-sm transition duration-300"
+                  >Filières</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-white/60 hover:text-white text-sm transition duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contactez-nous -->
+          <div>
+            <h4 class="text-white font-semibold mb-4">Contactez-nous</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2 text-white/60 text-sm">
+                <i class="fa-solid fa-location-dot mt-0.5 shrink-0"></i>
+                Dakar, Sénégal
+              </li>
+              <li class="flex items-start gap-2 text-white/60 text-sm">
+                <i class="fa-solid fa-phone mt-0.5 shrink-0"></i>
+                +221 77 440 03 03
+              </li>
+              <li class="flex items-start gap-2 text-white/60 text-sm">
+                <i class="fa-solid fa-envelope mt-0.5 shrink-0"></i>
+                contact@iibs-events.sn
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-white/10 pt-6">
+          <p class="text-white/40 text-xs text-center">
+            Copyright &copy; IIBS Events 2026. Tous droits réservés.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/javascript/script.js"></script>
+  </body>
+</html>

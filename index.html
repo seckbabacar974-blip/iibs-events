@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth box-border m-0 p-0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Configuration Tailwind pour le mode sombre
+      tailwind.config = { darkMode: "class" };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>IIBS Events — Accueil</title>
+  </head>
+
+  <body
+    class="bg-[#D7DBDF] transition-colors duration-300 dark:bg-[#0A142F] text-slate-900 dark:text-white overflow-x-hidden"
+  >
+    <!-- HEADER -->
+    <header class="bg-white/15 shadow-md sticky top-0 z-50 backdrop-blur">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center gap-2">
+            <div
+              class="w-8 h-8 bg-[#112240] p-5 rounded-md flex items-center justify-center"
+            >
+              <span class="text-white font-bold text-sm">IIBS</span>
+            </div>
+            <span class="text-[#112240] font-bold text-lg dark:text-white"
+              >IIBS Events</span
+            >
+          </a>
+
+          <!-- Nav Desktop -->
+          <nav class="hidden md:flex items-center gap-6">
+            <a
+              href="index.html"
+              class="text-[#112240] dark:text-white dark:hover:text-[#112240] font-semibold duration-300 hover:text-gray-700 text-sm transition"
+              >Accueil</a
+            >
+            <a
+              href="src/agenda.html"
+              class="text-[#112240] dark:text-white dark:hover:text-[#112240] font-semibold duration-300 hover:text-gray-700 text-sm transition"
+              >Agenda</a
+            >
+            <a
+              href="src/actus_galeries.html"
+              class="text-[#112240] dark:text-white dark:hover:text-[#112240] font-semibold duration-300 hover:text-gray-700 text-sm transition"
+              >Actualités</a
+            >
+            <a
+              href="src/filieres.html"
+              class="text-[#112240] dark:text-white dark:hover:text-[#112240] font-semibold duration-300 hover:text-gray-700 text-sm transition"
+              >Filières</a
+            >
+            <a
+              href="src/contact.html"
+              class="text-[#112240] dark:text-white dark:hover:text-[#112240] font-semibold duration-300 hover:text-gray-700 text-sm transition"
+              >Contact</a
+            >
+          </nav>
+
+          
+          <div class="flex items-center gap-3">
+            <!-- Toggle dark/light -->
+            <label
+              for="dark-toggle"
+              class="cursor-pointer w-9 h-9 rounded-full flex items-center  justify-center text-[#112240] dark:text-white font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 hover:bg-white/10 transition"
+            >
+              <i class="fa-solid fa-moon"></i>
+            </label>
+
+            <a
+              href="src/inscription.html"
+              class="duration-300 ease-linear bg-[#E11D48] hover:bg-[#BE123C] text-white text-sm font-semibold px-4 py-2 rounded-lg transition hidden md:block"
+            >
+              M'inscrire &rightarrow;
+            </a>
+
+            <!-- Burger mobile -->
+            <label
+              for="menu-toggle"
+              class="md:hidden cursor-pointer w-9 h-9 flex items-center justify-center text-[#112240] dark:text-white hover:bg-white/10 rounded-lg transition"
+            >
+              ☰
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu mobile -->
+      <input type="checkbox" id="menu-toggle" class="hidden peer/menu" />
+      <div
+        class="hidden peer-checked/menu:flex flex-col justify-center items-center bg-[#0A2540] border-t border-white/10 px-4 py-4 gap-4 md:hidden"
+      >
+        <a
+          href="index.html"
+          class="text-white font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 text-sm"
+          >Accueil</a
+        >
+        <a
+          href="src/agenda.html"
+          class="text-white font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 text-sm"
+          >Agenda</a
+        >
+        <a
+          href="src/actus_galeries.html"
+          class="text-white font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 text-sm"
+          >Actualités</a
+        >
+        <a
+          href="src/filieres.html"
+          class="text-white font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 text-sm"
+          >Filières</a
+        >
+        <a
+          href="src/contact.html"
+          class="text-white font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 text-sm"
+          >Contact</a
+        >
+        <a
+          href="src/inscription.html"
+          class="text-[#112240] bg-white text-sm font-semibold px-4 py-2 rounded-lg text-center w-full"
+          >M'inscrire &rightarrow;</a
+        >
+      </div>
+      <input type="checkbox" id="dark-toggle" class="hidden" />
+    </header>
+
+    <!-- HERO -->
+    <section class="bg-[#0A2540] dark:bg-[#0A142F] py-16 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Texte gauche -->
+          <div>
+            <span
+              class="bg-[#E11D48]/20 text-[#64748B] text-xs font-semibold px-3 py-1 rounded-full mb-4 inline-block"
+            >
+              <i class="fa-solid fa-star"></i> Institut Informatique Business School
+            </span>
+            <h1
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6"
+            >
+              Façonnez l'Avenir de la Technologie
+            </h1>
+            <p class="text-white/70 text-base lg:text-lg mb-8 leading-relaxed">
+              Participez aux événements qui forgent les leaders de demain.
+              Conférences, ateliers, hackathons — rejoignez la communauté IIBS.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <!-- Bouton secondaire -->
+              <a
+                href="src/filieres.html"
+                class="border border-white/40 hover:border-white text-white text-sm font-semibold px-6 py-3 rounded-lg transition duration-300"
+              >
+                Apprendre plus
+              </a>
+              <!-- Bouton principal -->
+              <a
+                href="src/agenda.html"
+                class="bg-[#E11D48] hover:bg-[#BE123C] text-white text-sm font-semibold px-6 py-3 rounded-lg transition duration-300 flex items-center gap-2"
+              >
+                Nos Événements
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Image droite -->
+          <div class="relative">
+            <div class="rounded-2xl overflow-hidden aspect-video">
+              <img
+                src="assets/images/hero_img.jpg"
+                alt="Événement IIBS"
+                class="w-full h-full object-cover opacity-90"
+              />
+            </div>
+
+            <!-- Badge flottant bas droite -->
+            <div
+              class="absolute bottom-2 -right-4 md:bottom-2 md:-right-5  bg-white  rounded-xl px-4 py-3 shadow-lg"
+            >
+              <p class="text-[#0A2540]  text-sm font-bold">
+                Gestion
+              </p>
+            </div>
+
+            <!-- Badge flottant haut gauche -->
+            <div
+              class="absolute top-2 -left-4 md:top-2 lg:-left-20 bg-[#E11D48] rounded-xl px-4 py-3 shadow-lg"
+            >
+              <!-- <p class="text-white text-xs font-semibold">Informatique</p> -->
+              <p class="text-white text-sm font-bold">Informatique</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPÉCIALISATIONS -->
+    <section class="py-16 lg:py-24 bg-[#F8FAFC] dark:bg-[#0A142F]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Titre section -->
+        <div class="text-center mb-12">
+          <h2
+            class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0A2540] dark:text-white mb-4"
+          >
+            Nos Spécialisations Clés
+          </h2>
+          <p
+            class="text-[#64748B] dark:text-[#94A3B8] max-w-2xl mx-auto text-sm lg:text-base"
+          >
+            Découvrez nos parcours pour bâtir les compétences du numérique et
+            devenir les acteurs du changement de demain.
+          </p>
+        </div>
+
+        <!-- Grille 4 cartes -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+          <!-- Card 1 — Génie Logiciel -->
+          <div
+            class="bg-white dark:bg-[#112240] rounded-xl p-6 border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col mt-auto"
+          >
+            <div
+              class="w-12 h-12 bg-[#0A2540]/10 dark:bg-white/10 rounded-xl flex items-center justify-center mb-4"
+            >
+              <i
+                class="fa-solid fa-code text-[#0A2540] dark:text-white text-xl"
+              ></i>
+            </div>
+            <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">
+              Génie Logiciel
+            </h3>
+            <p
+              class="text-[#64748B] dark:text-[#94A3B8] text-sm mb-4 leading-relaxed"
+            >
+              Développez des applications robustes et scalables avec les
+              meilleures pratiques du génie logiciel.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs px-2 py-1 rounded-full"
+                >Full Stack</span
+              >
+              <span
+                class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs px-2 py-1 rounded-full"
+                >Agile</span
+              >
+            </div>
+            <a
+              href="src/filieres.html"
+              class="text-[#112240] border-2 border-[#112240] rounded-lg w-fit px-4 py-1 dark:bg-white dark:text-[#112240] dark:hover:bg-transparent dark:hover:border dark:hover:border-white dark:hover:text-white text-sm font-semibold hover:bg-[#112240] hover:text-white ease-linear duration-300 dark:ease-linear dark:duration-300"
+            >
+              Découvrir plus →
+            </a>
+          </div>
+
+          <!-- Card 2 — MCD -->
+          <div
+            class="bg-white dark:bg-[#112240] rounded-xl p-6 border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col mt-auto"
+          >
+            <div
+              class="w-12 h-12 bg-[#0A2540]/10 dark:bg-white/10 rounded-xl flex items-center justify-center mb-4"
+            >
+              <i
+                class="fa-solid fa-bullhorn text-[#0A2540] dark:text-white text-xl"
+              ></i>
+            </div>
+            <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">
+              MCD
+            </h3>
+            <p
+              class="text-[#64748B] dark:text-[#94A3B8] text-sm mb-4 leading-relaxed"
+            >
+              Marketing Communication Digital pour maîtriser les stratégies 
+              de communication.
+            </p>
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs px-2 py-1 rounded-full"
+                >Sécurité</span
+              >
+              <span
+                class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs px-2 py-1 rounded-full"
+                >Réseaux</span
+              >
+            </div>
+            <a
+              href="src/filieres.html"
+              class="text-[#112240] border-2 border-[#112240] rounded-lg w-fit px-4 py-1 dark:bg-white dark:text-[#112240] dark:hover:bg-transparent dark:hover:border dark:hover:border-white dark:hover:text-white text-sm font-semibold hover:bg-[#112240] hover:text-white ease-linear duration-300 dark:ease-linear dark:duration-300"
+            >
+              Découvrir plus →
+            </a>
+          </div>
+
+          <!-- Card 3 — MPG -->
+          <div
+            class="bg-white dark:bg-[#112240] rounded-xl p-6 border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col mt-auto"
+          >
+            <div
+              class="w-12 h-12 bg-[#0A2540]/10 dark:bg-white/10 rounded-xl flex items-center justify-center mb-4"
+            >
+              <i
+                class="fa-solid fa-chart-line text-[#0A2540] dark:text-white text-xl"
+              ></i>
+            </div>
+            <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">
+              MPG
+            </h3>
+            <p
+              class="text-[#64748B] dark:text-[#94A3B8] text-sm mb-4 leading-relaxed"
+            >
+              Management des Projets et Gouvernance IT pour piloter les
+              transformations numériques.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs px-2 py-1 rounded-full"
+                >Gestion</span
+              >
+              <span
+                class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs px-2 py-1 rounded-full"
+                >PMI</span
+              >
+            </div>
+            <a
+              href="src/filieres.html"
+              class="text-[#112240] border-2 border-[#112240] rounded-lg w-fit px-4 py-1 dark:bg-white dark:text-[#112240] dark:hover:bg-transparent dark:hover:border dark:hover:border-white dark:hover:text-white text-sm font-semibold hover:bg-[#112240] hover:text-white ease-linear duration-300 dark:ease-linear dark:duration-300"
+            >
+              Découvrir plus →
+            </a>
+          </div>
+
+          <!-- Card 4 — Cybersécurité -->
+          <div
+            class="bg-white dark:bg-[#112240] rounded-xl p-6 border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col mt-auto"
+          >
+            <div
+              class="w-12 h-12 bg-[#0A2540]/10 dark:bg-white/10 rounded-xl flex items-center justify-center mb-4"
+            >
+              <i
+                class="fa-solid fa-lock text-[#0A2540] dark:text-white text-xl"
+              ></i>
+            </div>
+            <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">
+              Cybersécurité
+            </h3>
+            <p
+              class="text-[#64748B] dark:text-[#94A3B8] text-sm mb-4 leading-relaxed"
+            >
+              Devenez expert en protection des systèmes, détection des menaces
+              et réponse aux incidents.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs px-2 py-1 rounded-full"
+                >Pentest</span
+              >
+              <span
+                class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs px-2 py-1 rounded-full"
+                >SIEM</span
+              >
+            </div>
+            <a
+              href="src/filieres.html"
+              class="text-[#112240] border-2 border-[#112240] rounded-lg w-fit px-4 py-1 dark:bg-white dark:text-[#112240] dark:hover:bg-transparent dark:hover:border dark:hover:border-white dark:hover:text-white text-sm font-semibold hover:bg-[#112240] hover:text-white ease-linear duration-300 dark:ease-linear dark:duration-300"
+            >
+              Découvrir plus →
+            </a>
+          </div>
+        </div>
+
+        <!-- Bouton voir plus -->
+        <div class="text-center">
+          <a
+            href="src/filieres.html"
+            class="inline-flex items-center gap-2 border border-[#0A2540] dark:border-white/30 text-[#0A2540] dark:text-white text-sm font-semibold px-6 py-3 rounded-lg hover:bg-[#0A2540] hover:text-white dark:hover:bg-white/10 transition duration-300"
+          >
+            Voir plus
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÉVÉNEMENTS À LA UNE -->
+    <section class="py-16 lg:py-24 bg-white dark:bg-[#0D1B2A]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Titre section -->
+        <div class="text-center mb-12">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0A2540] dark:text-white mb-4">
+        Les Événements à la Une
+        </h2>
+        <p class="text-[#64748B] dark:text-[#94A3B8] max-w-2xl mx-auto text-sm lg:text-base">
+        Plongez au cœur de la vie de l'école à travers les événements qui marquent notre communauté.
+      </p>
+        </div>
+
+        <!-- Grille 3 cartes -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+
+      <!-- Card 1 -->
+      <div class="bg-[#F8FAFC] dark:bg-[#112240] rounded-xl overflow-hidden border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col">
+        <div class="aspect-video overflow-hidden">
+          <img src="assets/images/hackathon1.jpg" alt="Hackathon IIBS 2026"
+            class="w-full h-full object-cover hover:scale-105 transition duration-500" />
+        </div>
+        <div class="p-5 flex flex-col flex-1">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded-full">En cours</span>
+            <span class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs font-semibold px-2 py-1 rounded-full">Compétition</span>
+          </div>
+          <p class="text-[#64748B] text-xs font-semibold mb-2">
+            <i class="fa-regular fa-calendar mr-1"></i> 15 Juillet 2026 · IIBS Dakar
+          </p>
+          <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">Hackathon IIBS 2026</h3>
+          <p class="text-[#64748B] dark:text-[#94A3B8] text-sm mb-4 leading-relaxed">
+            48h pour innover et créer des solutions tech aux défis de l'Afrique de demain.
+          </p>
+          <a href="src/details/hackathon.html"
+            class="text-[#112240] border-2 border-[#112240] rounded-lg w-fit px-4 py-1 dark:bg-white dark:text-[#112240] dark:hover:bg-transparent dark:hover:border dark:hover:border-white dark:hover:text-white text-sm font-semibold hover:bg-[#112240] hover:text-white ease-linear duration-300 dark:ease-linear dark:duration-300 mt-auto">
+            En savoir plus →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-[#F8FAFC] dark:bg-[#112240] rounded-xl overflow-hidden border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col">
+        <div class="aspect-video overflow-hidden">
+          <img src="assets/images/conf.jpg" alt="Conférence IA"
+            class="w-full h-full object-cover hover:scale-105 transition duration-500" />
+        </div>
+        <div class="p-5 flex flex-col flex-1">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-1 rounded-full">À venir</span>
+            <span class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs font-semibold px-2 py-1 rounded-full">Conférence</span>
+          </div>
+          <p class="text-[#64748B] text-xs font-semibold mb-2">
+            <i class="fa-regular fa-calendar mr-1"></i> 22 Juillet 2026 · Amphi A
+          </p>
+          <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">Conférence : IA & Métiers de Demain</h3>
+          <p class="text-[#64748B] dark:text-[#94A3B8] text-sm mb-4 leading-relaxed">
+            Comment l'intelligence artificielle transforme les métiers de l'informatique et du business.
+          </p>
+          <a href="src/details/conference.html"
+            class="text-[#112240] border-2 border-[#112240] rounded-lg w-fit px-4 py-1 dark:bg-white dark:text-[#112240] dark:hover:bg-transparent dark:hover:border dark:hover:border-white dark:hover:text-white text-sm font-semibold hover:bg-[#112240] hover:text-white ease-linear duration-300 dark:ease-linear dark:duration-300 mt-auto">
+            En savoir plus →
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-[#F8FAFC] dark:bg-[#112240] rounded-xl overflow-hidden border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col">
+        <div class="aspect-video overflow-hidden">
+          <img src="assets/images/img2.jpg" alt="Atelier Cybersécurité"
+            class="w-full h-full object-cover hover:scale-105 transition duration-500" />
+        </div>
+        <div class="p-5 flex flex-col flex-1">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="bg-yellow-100 text-yellow-700 text-xs font-semibold px-2 py-1 rounded-full">Inscriptions ouvertes</span>
+            <span class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs font-semibold px-2 py-1 rounded-full">Atelier</span>
+          </div>
+          <p class="text-[#64748B] text-xs font-semibold mb-2">
+            <i class="fa-regular fa-calendar mr-1"></i> 30 Juillet 2026 · Lab Informatique
+          </p>
+          <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">Atelier Cybersécurité</h3>
+          <p class="text-[#64748B] dark:text-[#94A3B8] text-sm mb-4 leading-relaxed">
+            Protège tes premières applications : initiation aux failles web et bonnes pratiques de sécurité.
+          </p>
+          <a href="src/details/atelier.html"
+            class="text-[#112240] border-2 border-[#112240] rounded-lg w-fit px-4 py-1 dark:bg-white dark:text-[#112240] dark:hover:bg-transparent dark:hover:border dark:hover:border-white dark:hover:text-white text-sm font-semibold hover:bg-[#112240] hover:text-white ease-linear duration-300 dark:ease-linear dark:duration-300 mt-auto">
+            En savoir plus →
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bouton découvrir plus -->
+    <div class="text-center">
+      <a href="src/agenda.html"
+        class="inline-flex items-center gap-2 border border-[#0A2540] dark:border-white/30 text-[#0A2540] dark:text-white text-sm font-semibold px-6 py-3 rounded-lg hover:bg-[#0A2540] hover:text-white dark:hover:bg-white/10 transition duration-300">
+        Découvrir plus
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </div>
+
+  </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#0A2540] dark:bg-[#0A142F] pt-12 pb-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+
+        <!-- Logo + description + réseaux -->
+        <div class="lg:col-span-2">
+          <a href="index.html" class="flex items-center gap-2 mb-4">
+            <div class="w-8 h-8 bg-white rounded-md flex items-center justify-center">
+              <span class="text-[#112240] font-bold text-sm">IIBS</span>
+            </div>
+            <span class="text-white font-bold text-lg">IIBS Events</span>
+          </a>
+          <p class="text-white/60 text-sm leading-relaxed max-w-xs mb-6">
+            La plateforme officielle des événements de l'Institut Informatique Business School de Dakar.
+          </p>
+          <!-- Réseaux sociaux -->
+          <div class="flex items-center gap-4">
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#E11D48] flex items-center justify-center text-white transition duration-300">
+              <i class="fa-brands fa-instagram text-sm"></i>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#E11D48] flex items-center justify-center text-white transition duration-300">
+              <i class="fa-brands fa-github text-sm"></i>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#E11D48] flex items-center justify-center text-white transition duration-300">
+              <i class="fa-brands fa-facebook text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+      <!-- Liens utiles -->
+      <div>
+        <h4 class="text-white font-semibold mb-4">Liens utiles</h4>
+        <ul class="space-y-3">
+          <li><a href="index.html" class="text-white/60 hover:text-white text-sm transition duration-300">Accueil</a></li>
+          <li><a href="src/agenda.html" class="text-white/60 hover:text-white text-sm transition duration-300">Agenda</a></li>
+          <li><a href="src/actus_galeries.html" class="text-white/60 hover:text-white text-sm transition duration-300">Actualités</a></li>
+          <li><a href="src/filieres.html" class="text-white/60 hover:text-white text-sm transition duration-300">Filières</a></li>
+          <li><a href="src/contact.html" class="text-white/60 hover:text-white text-sm transition duration-300">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contactez-nous -->
+      <div>
+        <h4 class="text-white font-semibold mb-4">Contactez-nous</h4>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2 text-white/60 text-sm">
+            <i class="fa-solid fa-location-dot mt-0.5 shrink-0"></i>
+            Dakar, Sénégal
+          </li>
+          <li class="flex items-start gap-2 text-white/60 text-sm">
+            <i class="fa-solid fa-phone mt-0.5 shrink-0"></i>
+            +221 77 440 03 03
+          </li>
+          <li class="flex items-start gap-2 text-white/60 text-sm">
+            <i class="fa-solid fa-envelope mt-0.5 shrink-0"></i>
+            contact@iibs-events.sn
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="border-t border-white/10 pt-6">
+      <p class="text-white/40 text-xs text-center">
+        Copyright &copy; IIBS Events 2026. Tous droits réservés.
+      </p>
+    </div>
+      </div>
+    </footer>
+
+    <script src="assets/javascript/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth box-border m-0 p-0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Configuration Tailwind pour le mode sombre
+      tailwind.config = { darkMode: "class" };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>IIBS Events — Actualités & Galerie</title>
+  </head>
+
+  <body
+    class="bg-[#D7DBDF] transition-colors duration-300 dark:bg-[#0A142F] text-slate-900 dark:text-white"
+  >
+    <!-- HEADER -->
+    <header class="bg-white/15 shadow-md sticky top-0 z-50 backdrop-blur">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <a href="../index.html" class="flex items-center gap-2">
+            <div
+              class="w-8 h-8 bg-[#112240] p-5 rounded-md flex items-center justify-center"
+            >
+              <span class="text-white font-bold text-sm">IIBS</span>
+            </div>
+            <span class="text-[#112240] font-bold text-lg dark:text-white"
+              >IIBS Events</span
+            >
+          </a>
+
+          <!-- Nav Desktop -->
+          <nav class="hidden md:flex items-center gap-6">
+            <a
+              href="../index.html"
+              class="text-[#112240] dark:text-white dark:hover:text-[#112240] font-semibold duration-300 hover:text-gray-700 text-sm transition"
+              >Accueil</a
+            >
+            <a
+              href="agenda.html"
+              class="text-[#112240] dark:text-white dark:hover:text-[#112240] font-semibold duration-300 hover:text-gray-700 text-sm transition"
+              >Agenda</a
+            >
+            <a
+              href="actus_galeries.html"
+              class="text-[#112240] dark:text-white dark:hover:text-[#112240] font-semibold duration-300 hover:text-gray-700 text-sm transition"
+              >Actualités</a
+            >
+            <a
+              href="filieres.html"
+              class="text-[#112240] dark:text-white dark:hover:text-[#112240] font-semibold duration-300 hover:text-gray-700 text-sm transition"
+              >Filières</a
+            >
+            <a
+              href="contact.html"
+              class="text-[#112240] dark:text-white dark:hover:text-[#112240] font-semibold duration-300 hover:text-gray-700 text-sm transition"
+              >Contact</a
+            >
+          </nav>
+
+          <!-- Actions -->
+          <div class="flex items-center gap-3">
+            <!-- Toggle dark/light -->
+            <label
+              for="dark-toggle"
+              class="cursor-pointer w-9 h-9 rounded-full flex items-center justify-center text-[#112240] dark:text-white font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 hover:bg-white/10 transition"
+            >
+              <i class="fa-solid fa-moon"></i>
+            </label>
+
+            <!-- CTA -->
+            <a
+              href="inscription.html"
+              class="duration-300 ease-linear bg-[#E11D48] hover:bg-[#BE123C] text-white text-sm font-semibold px-4 py-2 rounded-lg transition hidden md:block"
+            >
+              M'inscrire &rightarrow;
+            </a>
+
+            <!-- Burger mobile -->
+            <label
+              for="menu-toggle"
+              class="md:hidden cursor-pointer w-9 h-9 flex items-center justify-center text-[#112240] dark:text-white hover:bg-white/10 rounded-lg transition"
+            >
+              ☰
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu mobile -->
+      <input type="checkbox" id="menu-toggle" class="hidden peer/menu" />
+      <div
+        class="hidden peer-checked/menu:flex flex-col justify-center items-center bg-[#0A2540] border-t border-white/10 px-4 py-4 gap-4 md:hidden"
+      >
+        <a
+          href="../index.html"
+          class="text-white font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 text-sm"
+          >Accueil</a
+        >
+        <a
+          href="agenda.html"
+          class="text-white font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 text-sm"
+          >Agenda</a
+        >
+        <a
+          href="actus_galeries.html"
+          class="text-white font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 text-sm"
+          >Actualités</a
+        >
+        <a
+          href="filieres.html"
+          class="text-white font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 text-sm"
+          >Filières</a
+        >
+        <a
+          href="contact.html"
+          class="text-white font-semibold duration-300 hover:text-gray-700 dark:hover:text-gray-700 text-sm"
+          >Contact</a
+        >
+        <a
+          href="inscription.html"
+          class="text-[#112240] bg-white text-sm font-semibold px-4 py-2 rounded-lg text-center w-full"
+          >M'inscrire &rightarrow;</a
+        >
+      </div>
+      <input type="checkbox" id="dark-toggle" class="hidden" />
+    </header>
+
+    <!-- HERO -->
+    <section class="bg-[#0A2540] dark:bg-[#0A142F] py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          Le Blog & Actualités Tech
+        </h1>
+        <p class="text-white/70 text-sm lg:text-base max-w-md leading-relaxed">
+          Restez connecté avec les dernières innovations du numérique, découvrez
+          les coulisses des projets de nos étudiants et suivez la vie de notre
+          communauté.
+        </p>
+      </div>
+    </section>
+
+    <main class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- ARTICLES -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          <!-- Article 1 -->
+          <a
+            href="detail.html"
+            class="bg-white dark:bg-[#112240] rounded-xl overflow-hidden border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col group"
+          >
+            <div class="aspect-video overflow-hidden">
+              <img
+                src="../assets/images/hackathon1.jpg"
+                alt="Hackathon IIBS 2026"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center gap-2 mb-3">
+                <span
+                  class="bg-[#E11D48] text-white text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1"
+                >
+                  <i class="fa-solid fa-circle-dot text-xs"></i> Vie de campus
+                </span>
+                <span
+                  class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1"
+                >
+                  <i class="fa-regular fa-calendar text-xs"></i> 15/07/2026
+                </span>
+              </div>
+              <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">
+                Hackathon IIBS 2026 : 48h pour innover
+              </h3>
+              <p
+                class="text-[#64748B] dark:text-[#94A3B8] text-sm leading-relaxed"
+              >
+                Les étudiants en Génie Logiciel et Cybersécurité se sont
+                affrontés lors du Hackathon annuel de l'IIBS. 12 équipes, 48
+                heures, des solutions concrètes aux défis du numérique africain.
+              </p>
+            </div>
+          </a>
+
+          <!-- Article 2 -->
+          <a
+            href="detail.html"
+            class="bg-white dark:bg-[#112240] rounded-xl overflow-hidden border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col group"
+          >
+            <div class="aspect-video overflow-hidden">
+              <img
+                src="../assets/images/conf.jpg"
+                alt="Conférence IA"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center gap-2 mb-3">
+                <span
+                  class="bg-yellow-400 text-white text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1"
+                >
+                  <i class="fa-solid fa-circle-dot text-xs"></i> Conférence
+                </span>
+                <span
+                  class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1"
+                >
+                  <i class="fa-regular fa-calendar text-xs"></i> 22/07/2026
+                </span>
+              </div>
+              <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">
+                L'IA & Machine Learning : les métiers de demain
+              </h3>
+              <p
+                class="text-[#64748B] dark:text-[#94A3B8] text-sm leading-relaxed"
+              >
+                L'IIBS a accueilli des experts en intelligence artificielle et
+                machine learning pour une masterclass sur les transformations
+                numériques qui redéfinissent les secteurs économiques au Sénégal
+                et en Afrique.
+              </p>
+            </div>
+          </a>
+
+          <!-- Article 3 -->
+          <a
+            href="detail.html"
+            class="bg-white dark:bg-[#112240] rounded-xl overflow-hidden border border-gray-100 dark:border-[#1E3A5F] hover:shadow-lg transition duration-300 flex flex-col group"
+          >
+            <div class="aspect-video overflow-hidden">
+              <img
+                src="../assets/images/atelier.jpg"
+                alt="Atelier Cybersécurité"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+              />
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center gap-2 mb-3">
+                <span
+                  class="bg-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1"
+                >
+                  <i class="fa-solid fa-circle-dot text-xs"></i> Tech
+                </span>
+                <span
+                  class="bg-[#0A2540]/10 dark:bg-white/10 text-[#0A2540] dark:text-white text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1"
+                >
+                  <i class="fa-regular fa-calendar text-xs"></i> 30/07/2026
+                </span>
+              </div>
+              <h3 class="font-bold text-[#0A2540] dark:text-white text-lg mb-2">
+                Atelier Cybersécurité : protéger ses premières applis
+              </h3>
+              <p
+                class="text-[#64748B] dark:text-[#94A3B8] text-sm leading-relaxed"
+              >
+                Les étudiants en Cyber Sécurité ont animé un atelier pratique
+                sur les failles web les plus courantes. Au programme : injection
+                SQL, XSS et les bonnes pratiques pour sécuriser ses applications
+                dès le développement.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- GALERIE PHOTOS -->
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="aspect-video overflow-hidden rounded-xl">
+            <img
+              src="../assets/images/hackathon1.jpg"
+              alt="Galerie 1"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500 cursor-pointer"
+            />
+          </div>
+          <div class="aspect-video overflow-hidden rounded-xl">
+            <img
+              src="../assets/images/conf.jpg"
+              alt="Galerie 2"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500 cursor-pointer"
+            />
+          </div>
+          <div class="aspect-video overflow-hidden rounded-xl">
+            <img
+              src="../assets/images/jpo.jpg"
+              alt="Galerie 3"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500 cursor-pointer"
+            />
+          </div>
+          <div class="aspect-video overflow-hidden rounded-xl">
+            <img
+              src="../assets/images/atelier.jpg"
+              alt="Galerie 4"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500 cursor-pointer"
+            />
+          </div>
+          <div class="aspect-video overflow-hidden rounded-xl">
+            <img
+              src="../assets/images/forum.jpg"
+              alt="Galerie 5"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500 cursor-pointer"
+            />
+          </div>
+          <div class="aspect-video overflow-hidden rounded-xl">
+            <img
+              src="../assets/images/demo.jpg"
+              alt="Galerie 6"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500 cursor-pointer"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-[#0A2540] dark:bg-[#0A142F] pt-12 pb-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+          <!-- Logo + description + réseaux -->
+          <div class="lg:col-span-2">
+            <a href="../index.html" class="flex items-center gap-2 mb-4">
+              <div
+                class="w-8 h-8 bg-white rounded-md flex items-center justify-center"
+              >
+                <span class="text-[#112240] font-bold text-sm">IIBS</span>
+              </div>
+              <span class="text-white font-bold text-lg">IIBS Events</span>
+            </a>
+            <p class="text-white/60 text-sm leading-relaxed max-w-xs mb-6">
+              La plateforme officielle des événements de l'Institut Informatique
+              Business School de Dakar.
+            </p>
+            <!-- Réseaux sociaux -->
+            <div class="flex items-center gap-4">
+              <a
+                href="#"
+                class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#E11D48] flex items-center justify-center text-white transition duration-300"
+              >
+                <i class="fa-brands fa-instagram text-sm"></i>
+              </a>
+              <a
+                href="#"
+                class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#E11D48] flex items-center justify-center text-white transition duration-300"
+              >
+                <i class="fa-brands fa-github text-sm"></i>
+              </a>
+              <a
+                href="#"
+                class="w-9 h-9 rounded-full bg-white/10 hover:bg-[#E11D48] flex items-center justify-center text-white transition duration-300"
+              >
+                <i class="fa-brands fa-facebook text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Liens utiles -->
+          <div>
+            <h4 class="text-white font-semibold mb-4">Liens utiles</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="../index.html"
+                  class="text-white/60 hover:text-white text-sm transition duration-300"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="agenda.html"
+                  class="text-white/60 hover:text-white text-sm transition duration-300"
+                  >Agenda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="actus_galeries.html"
+                  class="text-white/60 hover:text-white text-sm transition duration-300"
+                  >Actualités</a
+                >
+              </li>
+              <li>
+                <a
+                  href="filieres.html"
+                  class="text-white/60 hover:text-white text-sm transition duration-300"
+                  >Filières</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-white/60 hover:text-white text-sm transition duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contactez-nous -->
+          <div>
+            <h4 class="text-white font-semibold mb-4">Contactez-nous</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2 text-white/60 text-sm">
+                <i class="fa-solid fa-location-dot mt-0.5 shrink-0"></i>
+                Dakar, Sénégal
+              </li>
+              <li class="flex items-start gap-2 text-white/60 text-sm">
+                <i class="fa-solid fa-phone mt-0.5 shrink-0"></i>
+                +221 77 440 03 03
+              </li>
+              <li class="flex items-start gap-2 text-white/60 text-sm">
+                <i class="fa-solid fa-envelope mt-0.5 shrink-0"></i>
+                contact@iibs-events.sn
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-white/10 pt-6">
+          <p class="text-white/40 text-xs text-center">
+            Copyright &copy; IIBS Events 2026. Tous droits réservés.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/javascript/script.js"></script>
+  </body>
+</html>
